@@ -57,7 +57,7 @@ router.put("/:id/update", (req, res, next) => {
     }
   );
 
-// may put the following in its own component! line 66 - 77 and import it in
+// may put the following generatedtoken in its own component! line 66 - 77 and import it in
 function generateToken(users){
     const payload = {
         subject: users.id,
