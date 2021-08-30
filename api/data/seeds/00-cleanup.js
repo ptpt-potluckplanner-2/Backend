@@ -5,4 +5,5 @@ exports.seed = function (knex) {
     mode: 'truncate',
     ignoreTables: ['knex_migrations', 'knex_migrations_lock'],
   })
+  .then(() => console.log("\n== All tables truncated, ready to seed ==\n"));
 }

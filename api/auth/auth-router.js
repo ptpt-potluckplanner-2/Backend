@@ -1,11 +1,13 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const router = express(Router);
+
 
 const Users = require("../../users/user-model.js");
 const { JWT_SECRET } = require('../auth/secrets.js');
 
-router.post("/register", (req, res) => {
+router.post("/register", (req, res, next) => {
     let newUser = req.body;
     const hash = bcrypt.hashSync(newUser.password, 8);
     newUser.password = hash;
@@ -66,9 +68,9 @@ function generateToken(users){
         role: users.role || 'undefined'
     }
     const options = {
-        expiresIn: '2h'
+        expiresIn: '12h'
     } 
     return jwt.sign(payload, jwtSecret, options)
 }
 
-module.exports = router 
+module.exports = router;
