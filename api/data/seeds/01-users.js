@@ -4,17 +4,17 @@ exports.seed = function (knex) {
         {
           username: 'Timmy Nguyen',
           password: 'pass1234',
-          email: 'fake@fake.com',
+          email: 'fake1@fake.com',
         },
         {
           username: 'Mark Stahl',
           password: 'pass12345',
-          email: 'fake@fake.com',
+          email: 'fake2@fake.com',
         },
         {
           username: 'Tony Lu',
           password: 'pass123456',
-          email: 'fake@fake.com',
+          email: 'fake3@fake.com',
         },
       ]);
     });
