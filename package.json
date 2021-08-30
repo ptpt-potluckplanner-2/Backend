@@ -1,5 +1,5 @@
 {
-  "name": "Backend",
+  "name": "build-week-scaffolding-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -43,7 +43,7 @@
     "cross-env": "7.0.3",
     "eslint": "7.32.0",
     "jest": "27.0.6",
-    "nodemon": "2.0.12",
+    "nodemon": "^2.0.12",
     "supertest": "6.1.6"
   }
 }
